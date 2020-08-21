@@ -22,7 +22,7 @@ pipeline {
         }
         stage ('Docker Build') {
             steps {
-                sh 'docker build -t shoubhikghosh83/devops/spring-mvc:latest .' 
+                sh 'docker build -t shoubhikghosh83/devops:latest .' 
             }
             
         }
@@ -31,7 +31,7 @@ pipeline {
       steps {
         withCredentials([usernamePassword(credentialsId: 'dockerHub', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
           sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
-          sh 'docker push shoubhikghosh83/devops/spring-mvc:latest'
+          sh 'docker push shoubhikghosh83/devops:latest'
         }
       }
     }
