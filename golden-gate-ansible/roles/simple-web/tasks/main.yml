@@ -18,6 +18,7 @@
 
 - name: Install Docker
   command: sudo apt install docker-ce -y
+  ignore_errors: true
 
 - name: Starting Service
   command: sudo docker run -d -p 8080:8080 shoubhikghosh83/devops:latest
