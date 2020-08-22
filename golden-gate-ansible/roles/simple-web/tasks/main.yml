@@ -6,11 +6,15 @@
   command: sudo apt install apt-transport-https ca-certificates curl gnupg2 software-properties-common -y
 
 - name: Download Docker Key
-  command: curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+  apt_key:
+      url: https://download.docker.com/linux/debian/gpg
+      state: present
   ignore_errors: true
 
 - name: Set Docker Repo
-  command: sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
+  apt_repository:
+      repo: deb [arch=amd64] https://download.docker.com/linux/debian stretch stable
+      state: present
 
 - name: Run apt-get update
   command: apt-get update
@@ -20,7 +24,9 @@
   ignore_errors: true
 
 - name: Install Docker
-  command: sudo apt install docker-ce -y
+  apt:
+      name: "docker-ce"
+      state: latest
   ignore_errors: true
 
 - name: Starting Service
