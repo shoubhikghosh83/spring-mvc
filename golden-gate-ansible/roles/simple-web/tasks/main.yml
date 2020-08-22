@@ -1,5 +1,6 @@
 ---
-
+- name: Run apt-get update
+  command: apt-get update
 
 - name: apt install apt-transport-https
   command: sudo apt install apt-transport-https ca-certificates curl gnupg2 software-properties-common -y
@@ -11,6 +12,8 @@
 - name: Set Docker Repo
   command: sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
 
+- name: Run apt-get update
+  command: apt-get update
 
 - name: Set Docker Policy
   command: apt-cache policy docker-ce
