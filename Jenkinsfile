@@ -35,6 +35,12 @@ pipeline {
         }
       }
     }
+	stage ('Ansible Build') {
+            steps {
+                sh 'ansible-playbook -i golden-gate-ansible/ansible_hosts golden-gate-ansible/site.yml' 
+            }
+            
+        }
         
     }
 }
