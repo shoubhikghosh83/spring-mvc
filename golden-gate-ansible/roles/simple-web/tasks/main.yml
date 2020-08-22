@@ -12,16 +12,10 @@
 - name: Set Docker Repo
   command: sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
 
-- name: Update
-  command: sudo apt update
-  ignore_errors: true
 
 - name: Set Docker Policy
   command: apt-cache policy docker-ce
-
-- name: Deploy modified apache conf
-  command: src=apache2.conf dest=/etc/apache2/apache2.conf
-        owner=root group=root mode=0644
+  ignore_errors: true
 
 - name: Install Docker
   command: sudo apt install docker-ce -Y
