@@ -20,7 +20,6 @@
         zone: "{{zone}}"
         instances:
           - "{{ gcea }}"
-          - "{{ gceb }}" 
         project: "{{ project }}"
         auth_kind: "{{ auth_kind }}"
         service_account_file: "{{ credentials_file }}"

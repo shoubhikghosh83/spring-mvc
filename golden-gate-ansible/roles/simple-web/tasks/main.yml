@@ -7,6 +7,7 @@
 
 - name: Download Docker Key
   command: curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+  ignore_errors: true
 
 - name: Set Docker Repo
   command: sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
