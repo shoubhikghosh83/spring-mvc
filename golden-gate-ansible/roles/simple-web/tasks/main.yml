@@ -1,6 +1,5 @@
 ---
-- name: Run apt-get update
-  command: apt-get update
+
 
 - name: apt install apt-transport-https
   command: sudo apt install apt-transport-https ca-certificates curl gnupg2 software-properties-common -y
