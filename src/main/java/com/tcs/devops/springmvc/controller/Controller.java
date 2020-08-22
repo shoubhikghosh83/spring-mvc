@@ -25,4 +25,10 @@ public class Controller {
 	{
 		return service.getEmpById(id);
 	}
+	
+	@RequestMapping(value = "/health")
+	public String getHealth()
+	{
+		return "UP";
+	}
 }
