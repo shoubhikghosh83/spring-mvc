@@ -2,6 +2,6 @@
 # Google Compute Engine required authentication global variables
 # (Replace 'YOUR_PROJECT_ID' with the Project ID used in creating your GCP project.)
 project: goldengate-262714
-credentials_file: goldengate-262714-aadf5e39bc03.json
+credentials_file: goldengate-262714-d2445ea14448.json
 auth_kind: serviceaccount
-service_account_email: shoubhik-ansible@goldengate-262714.iam.gserviceaccount.com
+service_account_email: shoubhik-gcp@goldengate-262714.iam.gserviceaccount.com

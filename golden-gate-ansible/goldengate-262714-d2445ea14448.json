@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "goldengate-262714",
+  "private_key_id": "d2445ea1444822bbdad999fcd8eb04bdcf161987",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDcymw4b25IcAI3\ngr7Lkf2RQB4pTHzkwE/7x1WFbeHy6hP5q2Y6uCNqdKYXxexDO3NRGqhBX2X7t8j0\nq4LLMfkISJ1vv6M3GwHiQs3bJOxrlUi6googpKbQmvZusXJqbGt1xLyAbmwfkI80\nqH/Q0qJ04qdEjyw/xwM/1REC/dSkC29XAiP2otROHS8XFE6gtx7twlh1huQhkHOg\n1tUkn2ubTJtDpEhKwNt4hQfa1/exkQ7BxXthCYGCu0NhmujBh6orEXqraRB5VP4u\nvnoAy4UvKnQflDkHeObB2mdOniR6wufCtTZl35aG2+CW3FzIJLJEAk6AunYDNIvo\n6G4Z7QVXAgMBAAECggEAKR3HJoFV08aMGyNNfaJ7yotaso0savsHShd2bSkn3TFL\nNAD/wiqdacs8TQwOMf0FvhJNSBNIbiZtFWdFLarqOekv7GoPLologea36DoJjwVX\nbGg36dlPuWRKRRXlfT0gi+dtxSsLFpu4l3FTkCNRnpvA04soDd51U/NNPjXf3gZs\ndTws0JliqMz7JCasvukWlCXHruEhsWYND+lGYYnHfmA2s/oZ1LzdHZBuVhbLAtzW\nyk5UGc2aA92YvAula23hbslbxgJrFEKhDA3kHULhYqJLiOFGeDYjY7+CGxFwf6wq\n0qYt1QqBUuq+7K1b5MNfYxnU22KTSoY/5vwWp/MA3QKBgQD6Lc2aV2Yy+vz8kRFx\n7vPZNTaiBQNXWIouLryZxJIJKzDrHns4SODksUHQ6BBenTb3kJTSgyx4tS31B+o8\nH3Rp6JiDAncb10Gx3LJzxw1BsqfwI5/QWCP4ir47/S4hp2oZFZi18+m7F77bq1NE\nv4jLbcrAxCHcz+tkQvhoKF9O4wKBgQDh7ZFq7ba/CypEWaas4MtOa8GM/5K8Jevn\nygwWi6WzO9T6DLTm9f+ZQkuo1h+52d0lBc86ipMRGX4mHZt1PqddUXbTnZ04wkzp\nkp9a9FLdNS13If+aSwiLdph8W1ZTHm0yKypwyuQX62o2t+hwLqH16JOo2p0tj4Fc\ne0MrKhnl/QKBgAa47lpkWNGr3tpmh4J5OkIu5N3rppBVR7k/9j9ngckPSQw4UHVN\nuAVNIgicA7yXGuACGY2iirJfo/F+mfOtoLIr1tVGXq731MMTvBPSWG/Yfhy8yFGP\n3L+T8tKn1fJ/jiFIbEcPW8t0MuOyMdWaE/HrbFRLsOE/EQMrrYMW+qCjAoGBAKHy\n66RclfzIAhpQsVuHH/Us5OcvZH2eKUZT3OpkW/jo0LgVV6+fcwLnNNjn9IICm7Uo\nPu3V26oMPhMQchlPOiV4edcjSkofbYaY5cYLEUMkFV0qb9CoLI3cC15JEs4uJ1Qp\nARktNue2hsKGfgW8R7jAaOhHHRhFoBMtAG72lO35AoGBANjvdTHZWC1dqcYTw7kJ\nps2GwTCWkCG1/eCw6Bu8vNO/xXhQ8KTlYD3IEEBpNwckrQ/1ipHpMVsbjG9dG8+z\nCF5fH7yA9olaRDlrAtfPGzFmObgspR/kZ7mAnTUbllq1pxShqLikBobtYzVnGM81\nM0WOjwfWdX1ELk/cGdc/uwLV\n-----END PRIVATE KEY-----\n",
+  "client_email": "shoubhik-gcp@goldengate-262714.iam.gserviceaccount.com",
+  "client_id": "117854879700224712299",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/shoubhik-gcp%40goldengate-262714.iam.gserviceaccount.com"
+}
