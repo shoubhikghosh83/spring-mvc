@@ -61,7 +61,7 @@ public class Service {
 	
 	public List<Integer> getAllEmployeeSalLess25K()
 	{
-		return getAllEmp().stream().filter(e -> e.getEmpAddress().equals("Mumbai")).map(e -> e.getEmpId()).collect(Collectors.toList());
+		return getAllEmp().stream().filter(e -> e.getEmpSal()<250000).map(e -> e.getEmpId()).collect(Collectors.toList());
 	}
 	public static void main(String[] args) {
 		

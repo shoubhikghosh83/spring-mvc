@@ -10,7 +10,7 @@ pipeline {
             }
             
         }
-        stage ('Build') {
+        stage ('Sonar') {
             steps {
                 sh 'mvn sonar:sonar' 
             }
