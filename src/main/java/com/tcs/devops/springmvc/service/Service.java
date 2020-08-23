@@ -41,7 +41,28 @@ public class Service {
 	{
 		return getAllEmp().stream().filter(e -> e.getEmpGen().equals("M")).map(e -> e.getEmpId()).collect(Collectors.toList());
 	}
+	public List<Integer> getAllFemaleEmployee()
+	{
+		return getAllEmp().stream().filter(e -> e.getEmpGen().equals("F")).map(e -> e.getEmpId()).collect(Collectors.toList());
+	}
+	public List<Integer> getAllEmployeeEasternZone()
+	{
+		return getAllEmp().stream().filter(e -> e.getEmpAddress().equals("Kolkata")).map(e -> e.getEmpId()).collect(Collectors.toList());
+	}
+	public List<Integer> getAllEmployeeWesternZone()
+	{
+		return getAllEmp().stream().filter(e -> e.getEmpAddress().equals("Mumbai")).map(e -> e.getEmpId()).collect(Collectors.toList());
+	}
 	
+	public Employee getEmpByName(String name)
+	{
+		return getAllEmp().stream().filter(e -> e.getEmpName().equals(name) ).collect(Collectors.toList()).get(0);
+	}
+	
+	public List<Integer> getAllEmployeeSalLess25K()
+	{
+		return getAllEmp().stream().filter(e -> e.getEmpAddress().equals("Mumbai")).map(e -> e.getEmpId()).collect(Collectors.toList());
+	}
 	public static void main(String[] args) {
 		
 		

@@ -10,6 +10,12 @@ pipeline {
             }
             
         }
+        stage ('Build') {
+            steps {
+                sh 'mvn sonar:sonar' 
+            }
+            
+        }
         stage ('Docker Build') {
             steps {
                 sh 'docker build -t shoubhikghosh83/devops:latest .' 

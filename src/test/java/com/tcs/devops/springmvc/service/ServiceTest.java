@@ -50,5 +50,26 @@ public class ServiceTest {
 	{
 		assertEquals(new Integer(10), new Service().getAllMaleEmployee().get(0));	
 	}
+	
+	@Test
+	public void getAllFemaleEmployeeTest()
+	{
+		assertEquals(new Integer(100), new Service().getAllFemaleEmployee().get(0));	
+	}
+	@Test
+	public void getAllEmployeeEasternZoneTest()
+	{
+		assertEquals(new Integer(10), new Service().getAllEmployeeEasternZone().get(0));	
+	}
+	@Test
+	public void getAllEmployeeWesternZoneTest()
+	{
+		assertEquals(new Integer(100), new Service().getAllEmployeeWesternZone().get(0));	
+	}
+	@Test
+	public void getEmpByNameTest()
+	{
+		assertEquals("EMP1", new Service().getEmpByName("EMP1").getEmpName());	
+	}
 
 }
