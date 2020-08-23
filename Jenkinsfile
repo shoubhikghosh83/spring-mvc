@@ -44,8 +44,9 @@ pipeline {
         failure {  
              emailext (
 		     to: "shoubhikghosh83@gmail.com",
+		     from: "jenkins@jenkinsadmin.com",
     subject: "Failed: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
-    body: "Failed: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':\nCheck console output at '${env.BUILD_URL}'>${env.JOB_NAME} [${env.BUILD_NUMBER}]",
+    body: "Failed: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':\nCheck console output at '${env.BUILD_URL}' ${env.JOB_NAME} [${env.BUILD_NUMBER}]",
     recipientProviders: [[$class: 'DevelopersRecipientProvider']]
 )  
          } 
