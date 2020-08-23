@@ -1,6 +1,7 @@
 package com.tcs.devops.springmvc.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,6 +10,7 @@ import com.tcs.devops.springmvc.model.Employee;
 import com.tcs.devops.springmvc.service.Service;
 
 @RestController
+@RequestMapping("app")
 public class Controller {
 
 	
@@ -20,8 +22,8 @@ public class Controller {
 		this.service = service;
 	}
 	
-	@RequestMapping(value = "/getEmpById/{id}")
-	public Employee getEmpById(@PathVariable Integer id)
+	@GetMapping(value = "/getEmpById/{id}", produces = "application/json")
+	public Employee getEmpById(@PathVariable int id)
 	{
 		return service.getEmpById(id);
 	}

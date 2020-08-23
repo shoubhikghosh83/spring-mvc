@@ -71,5 +71,15 @@ public class ServiceTest {
 	{
 		assertEquals("EMP1", new Service().getEmpByName("EMP1").getEmpName());	
 	}
+	@Test
+	public void getAllEmployeeSalLess250KTest()
+	{
+		assertEquals(new Integer(10), new Service().getAllEmployeeSalLess250K().get(0));	
+	}
+	@Test
+	public void getAllEmployeeSalGrt250KTest()
+	{
+		assertEquals(new Integer(100), new Service().getAllEmployeeSalGrt250K().get(0));	
+	}
 
 }

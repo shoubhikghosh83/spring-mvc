@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 
 import com.tcs.devops.springmvc.model.Employee;
 
+@org.springframework.stereotype.Service
 public class Service {
 	
 	private List<Employee> getAllEmp()
@@ -59,9 +60,13 @@ public class Service {
 		return getAllEmp().stream().filter(e -> e.getEmpName().equals(name) ).collect(Collectors.toList()).get(0);
 	}
 	
-	public List<Integer> getAllEmployeeSalLess25K()
+	public List<Integer> getAllEmployeeSalLess250K()
 	{
 		return getAllEmp().stream().filter(e -> e.getEmpSal()<250000).map(e -> e.getEmpId()).collect(Collectors.toList());
+	}
+	public List<Integer> getAllEmployeeSalGrt250K()
+	{
+		return getAllEmp().stream().filter(e -> e.getEmpSal()>250000).map(e -> e.getEmpId()).collect(Collectors.toList());
 	}
 	public static void main(String[] args) {
 		
